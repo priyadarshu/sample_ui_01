@@ -25,6 +25,33 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Container(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Text(
+                  'Hi Mike',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14.0,
+                  ),
+                ),
+                Container(
+                  alignment: Alignment.centerRight,
+                  child: CircleAvatar(
+                    backgroundImage: AssetImage('assets\images\1.jpg'),
+                    radius: 40.0,
+                  ),
+                ),
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
