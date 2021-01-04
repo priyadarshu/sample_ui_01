@@ -1,6 +1,12 @@
 # sample_ui_01
 
 A new Flutter project.
+Uses ListView, GridView, CircleAvatar, BoxDecoration, Column, Row, Container,
+Image, AspectRatio classes
+
+## Sample output
+
+![](listviewgridview.gif)
 
 ## Getting Started
 
