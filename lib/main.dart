@@ -279,10 +279,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
-                        MyImageCards('assets/images/2.jpg'),
-                        MyImageCards('assets/images/3.jpg'),
-                        MyImageCards('assets/images/4.jpg'),
-                        MyImageCards('assets/images/5.jpg'),
+                        myImageCards('assets/images/2.jpg'),
+                        myImageCards('assets/images/3.jpg'),
+                        myImageCards('assets/images/4.jpg'),
+                        myImageCards('assets/images/5.jpg'),
                       ],
                     ),
                   ),
@@ -313,7 +313,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-Widget MyImageCards(image) {
+Widget myImageCards(image) {
   return AspectRatio(
     aspectRatio: 7 / 3,
     child: Container(
