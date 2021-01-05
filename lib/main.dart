@@ -38,7 +38,8 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding:
+                    const EdgeInsets.only(left: 20.0, right: 5.0, top: 5.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   //crossAxisAlignment: CrossAxisAlignment.end,
@@ -50,14 +51,14 @@ class _MyHomePageState extends State<MyHomePage> {
                         textStyle: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
-                          fontSize: 40.0,
+                          fontSize: 25.0,
                         ),
                       ),
                     ),
                     Container(
                       child: CircleAvatar(
                         backgroundImage: AssetImage('assets/images/1.jpg'),
-                        radius: 35.0,
+                        radius: 30.0,
                       ),
                     ),
                   ],
@@ -68,13 +69,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 //mainAxisCount:2,
                 shrinkWrap: true,
                 primary: false,
-                padding: EdgeInsets.all(12.0),
-                mainAxisSpacing: 11.0,
-                crossAxisSpacing: 11.0,
+                padding: EdgeInsets.all(20.0),
+                mainAxisSpacing: 20.0,
+                crossAxisSpacing: 20.0,
                 childAspectRatio: (itemWidth / itemHeight) * 2,
                 children: [
                   Container(
-                    padding: EdgeInsets.all(10.0),
+                    padding: EdgeInsets.all(5.0),
                     alignment: Alignment.bottomLeft,
                     decoration: BoxDecoration(
                       color: Colors.orange[300],
@@ -120,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.all(10.0),
+                    padding: EdgeInsets.all(5.0),
                     alignment: Alignment.bottomLeft,
                     decoration: BoxDecoration(
                       color: Colors.blue[300],
@@ -166,7 +167,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.all(10.0),
+                    padding: EdgeInsets.all(5.0),
                     alignment: Alignment.bottomLeft,
                     decoration: BoxDecoration(
                         color: Colors.green[300],
@@ -209,7 +210,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.all(10.0),
+                    padding: EdgeInsets.all(5.0),
                     alignment: Alignment.bottomLeft,
                     decoration: BoxDecoration(
                         color: Colors.red[300],
@@ -253,11 +254,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-              SizedBox(
-                height: 5.0,
-              ),
+              // SizedBox(
+              //   height: 5.0,
+              // ),
               Container(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(5.0),
                 alignment: Alignment.centerLeft,
                 child: Text(
                   'Events happening',
@@ -287,7 +288,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   SizedBox(
-                    height: 10.0,
+                    height: 2.0,
                   ),
                   Container(
                     padding: EdgeInsets.only(left: 10.0),
@@ -296,13 +297,45 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: GoogleFonts.poppins(
                         textStyle: TextStyle(
                           color: Colors.black,
-                          fontSize: 18.0,
+                          fontSize: 20.0,
                           //fontStyle: FontStyle.italic,
                           fontWeight: FontWeight.w700,
                         ),
                       ),
                     ),
-                  )
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Row(
+                        children: [
+                          Expanded(
+                            child: IconButton(
+                              icon: Icon(Icons.home),
+                              onPressed: () {},
+                            ),
+                          ),
+                          Center(
+                            child: FloatingActionButton(
+                              onPressed: () {},
+                              child: Icon(
+                                Icons.add,
+                                color: Colors.white,
+                                size: 20.0,
+                              ),
+                              backgroundColor: Colors.orangeAccent,
+                            ),
+                          ),
+                          Expanded(
+                            child: IconButton(
+                              icon: Icon(Icons.person),
+                              onPressed: () {},
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ],
